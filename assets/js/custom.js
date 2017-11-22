@@ -88,6 +88,15 @@
 	  e.preventDefault();
 	});
 
+	$(".mu-register-btn").click(function(e){
+	  var href = $(this).attr("href"),
+	      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+22;
+	  jQuery('html, body').stop().animate({
+	      scrollTop: offsetTop
+	  }, 1500);
+	  e.preventDefault();
+	});
+
 	// Bind to scroll
 	jQuery(window).scroll(function(){
 	   // Get container scroll position
