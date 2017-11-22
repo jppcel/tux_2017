@@ -50,6 +50,14 @@
 	    + '<span class="mu-event-counter-block"><span>%S</span> Segundos</span>'));
 	});
 
+	$("#aluno").change(function(){
+		if($("#aluno").val() == 1){
+			$("#ra").removeAttr("disabled");
+		}else{
+			$("#ra").attr("disabled",'disabled');
+		}
+	});
+
 
     /* ----------------------------------------------------------- */
 	/*  3. MENU SMOOTH SCROLLING
